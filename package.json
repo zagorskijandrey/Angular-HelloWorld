@@ -4,18 +4,19 @@
   "license": "MIT",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
+    "start": "node server.js",
     "build": "ng build",
     "test": "ng test",
     "lint": "ng lint",
-    "e2e": "ng e2e"
+    "e2e": "ng e2e",
+    "postinstall": "ng build --prod"
   },
   "private": true,
   "dependencies": {
-    "@angular/animations": "^7.2.0",
-    "@angular/common": "^7.2.0",
     "@angular/compiler": "^7.2.0",
     "@angular/cli": "^7.3.1",
+    "@angular/animations": "^7.2.0",
+    "@angular/common": "^7.2.0",
     "@angular/compiler-cli": "^7.2.0",
     "@angular/core": "^7.2.0",
     "@angular/forms": "^7.2.0",
@@ -26,7 +27,8 @@
     "core-js": "^2.6.2",
     "rxjs": "^6.1.0",
     "tslib": "^1.9.0",
-    "zone.js": "^0.8.27"
+    "zone.js": "^0.8.27",
+    "express": "4.16.4"
   },
   "devDependencies": {
     "@angular/language-service": "^7.2.0",
